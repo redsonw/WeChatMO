@@ -13,14 +13,14 @@
     <CustomBeforeTargets>Build</CustomBeforeTargets>
     <MajorVersion>0</MajorVersion>
     <MinorVersion>0</MinorVersion>
-    <PatchVersion>0</PatchVersion>
+    <PatchVersion>1</PatchVersion>
     <BuildVersion>112</BuildVersion>
     <!-- 项目版本	号 -->
-    <Version>0.0.0.112</Version>
+    <Version>0.0.1.112</Version>
     <!-- 程序集版本号 -->
-    <AssemblyVersion>0.0.0.112</AssemblyVersion>
+    <AssemblyVersion>0.0.1.112</AssemblyVersion>
     <!-- 文件版本号 -->
-    <FileVersion>0.0.0.112</FileVersion>
+    <FileVersion>0.0.1.112</FileVersion>
     <!-- 程序作者 -->
     <Authors>弦月</Authors>
     <!-- 公司组织 -->
