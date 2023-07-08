@@ -54,7 +54,4 @@
       <PackagePath>\</PackagePath>
     </None>
   </ItemGroup>
-  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="powershell -ExecutionPolicy Bypass -File &quot;$(MSBuildProjectDirectory)\BuildScript.ps1&quot;" />
-  </Target>
 </Project>
