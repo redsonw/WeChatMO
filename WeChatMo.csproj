@@ -1,56 +1,58 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <OutputType>WinExe</OutputType>
-    <TargetFramework>net7.0-windows</TargetFramework>
-    <Nullable>enable</Nullable>
-    <UseWindowsForms>true</UseWindowsForms>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <PlatformTarget>x64</PlatformTarget>
-    <ApplicationIcon>Logo.ico</ApplicationIcon>
-    <AssemblyName>WeChatMo</AssemblyName>
-    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
-    <CustomBeforeTargets>Build</CustomBeforeTargets>
-    <MajorVersion>0</MajorVersion>
-    <MinorVersion>0</MinorVersion>
-    <PatchVersion>1</PatchVersion>
-    <BuildVersion>113</BuildVersion>
-    <!-- 项目版本	号 -->
-    <Version>0.0.1.113</Version>
-    <!-- 程序集版本号 -->
-    <AssemblyVersion>0.0.1.113</AssemblyVersion>
-    <!-- 文件版本号 -->
-    <FileVersion>0.0.1.113</FileVersion>
-    <!-- 程序作者 -->
-    <Authors>弦月</Authors>
-    <!-- 公司组织 -->
-    <Company>Redsonw.Com</Company>
-    <Description>解除微信多开限制</Description>
-    <Copyright>Copyright © 2023</Copyright>
-    <Title>解除微信多开限制</Title>
-    <Product>解除微信多开限制</Product>
-    <PackageIcon>LOGO.png</PackageIcon>
-  </PropertyGroup>
-  <ItemGroup>
-    <Content Include="Logo.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Update="Properties\Resources.Designer.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Update="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <None Update="LOGO.png">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
-  </ItemGroup>
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net7.0-windows</TargetFramework>
+		<Nullable>enable</Nullable>
+		<UseWindowsForms>true</UseWindowsForms>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<PlatformTarget>x64</PlatformTarget>
+		<ApplicationIcon>Logo.ico</ApplicationIcon>
+		<AssemblyName>WeChatMo</AssemblyName>
+		<GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+		<CustomBeforeTargets>Build</CustomBeforeTargets>
+		<MajorVersion>0</MajorVersion>
+		<MinorVersion>0</MinorVersion>
+		<PatchVersion>1</PatchVersion>
+		<BuildVersion>113</BuildVersion>
+		<!-- 项目版本	号 -->
+		<Version>0.0.1.113</Version>
+		<!-- 程序集版本号 -->
+		<AssemblyVersion>0.0.1.113</AssemblyVersion>
+		<!-- 文件版本号 -->
+		<FileVersion>0.0.1.113</FileVersion>
+		<!-- 程序作者 -->
+		<Authors>弦月</Authors>
+		<!-- 公司组织 -->
+		<Company>Redsonw.Com</Company>
+		<!-- 文件说明 -->
+		<AssemblyTitle>解除微信多开工具</AssemblyTitle>
+		<Description>解除微信多开限制</Description>
+		<Copyright>Copyright © 2023</Copyright>
+		<Product>解除微信多开限制</Product>
+		<PackageIcon>LOGO.png</PackageIcon>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Content Include="Logo.ico" />
+	</ItemGroup>
+	<ItemGroup>
+		<Compile Update="Properties\Resources.Designer.cs">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>Resources.resx</DependentUpon>
+		</Compile>
+	</ItemGroup>
+	<ItemGroup>
+		<EmbeddedResource Update="Properties\Resources.resx">
+			<Generator>ResXFileCodeGenerator</Generator>
+			<LastGenOutput>Resources.Designer.cs</LastGenOutput>
+		</EmbeddedResource>
+	</ItemGroup>
+	<ItemGroup>
+		<None Update="LOGO.png">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
 </Project>
