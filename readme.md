@@ -33,11 +33,11 @@
 
 ### 2023-07-19 v0.0.1.114
 
-支持PC微信电脑版 3.9.6.29 测试版。
+- 支持PC微信电脑版 3.9.6.29 测试版。
 
 ### 2023-07-15 v0.0.1.113
 
-支持PC微信电脑版 3.9.6.22 测试版。
+- 支持PC微信电脑版 3.9.6.22 测试版。
 
 ### 2023-06-09 v0.0.1.112
 
@@ -51,6 +51,17 @@
 3. 自动识别系统已安装微信版本；
 
 > 微信多开解除工具长期更新，如果遇到BUG请联系我或加QQ群：855181110
+
+## 下载地址
+| 网盘 | 链接地址 | 提取码 |
+| :--: | --- | --- |
+|123云盘|https://www.123pan.com/s/82ytVv-Vs6Bv.html|FLMH|
+|百度网盘|https://pan.baidu.com/s/1b3LTfICH3kXnNuEwBrN8Tg|FLMH|
+|蓝奏云|https://flmh.lanzouk.com/b0131ppde|ad7b|
+|夸克网盘|https://pan.quark.cn/s/2c9489bc5369|无|
+|阿里云盘|https://www.aliyundrive.com/s/odAZDmCPghP|6p7n|
+|天翼云盘|https://cloud.189.cn/t/7zuamyiaUBbi|4xcr|
+|Github|https://github.com/redsonw/WeChatMO|
 
 ## 免责申明
 
