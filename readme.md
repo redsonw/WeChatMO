@@ -21,7 +21,7 @@
 ## 发布地址
 
 1. https://github.com/redsonw/WeChatMO/releases
-2. https://www.redsonw.com/original/soft/wechatmo.html
+2. https://www.redsonw.com/wechatmo.html
 
 ## 使用说明
 
