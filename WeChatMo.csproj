@@ -14,13 +14,13 @@
 		<MajorVersion>0</MajorVersion>
 		<MinorVersion>0</MinorVersion>
 		<PatchVersion>1</PatchVersion>
-		<BuildVersion>114</BuildVersion>
+		<BuildVersion>115</BuildVersion>
 		<!-- 项目版本	号 -->
-		<Version>0.0.1.114</Version>
+		<Version>0.0.1.115</Version>
 		<!-- 程序集版本号 -->
-		<AssemblyVersion>0.0.1.114</AssemblyVersion>
+		<AssemblyVersion>0.0.1.115</AssemblyVersion>
 		<!-- 文件版本号 -->
-		<FileVersion>0.0.1.114</FileVersion>
+		<FileVersion>0.0.1.115</FileVersion>
 		<!-- 程序作者 -->
 		<Authors>弦月</Authors>
 		<!-- 公司组织 -->
