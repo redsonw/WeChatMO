@@ -55,9 +55,9 @@ namespace RemoveMulti
                 LoggerListBox.Items.Add($"您的电脑还未安装PC 微信，请到官网下载最新版本");
                 PatchesButton.Enabled = false;
             }
-            DownloadLinkLabel.Text = " 最新测试版    官网最新版";
-            DownloadLinkLabel.Links.Add(new LinkLabel.Link(1, 5, "https://www.redsonw.com/pc/commsocial/wechatwin.html"));
-            DownloadLinkLabel.Links.Add(new LinkLabel.Link(10, 15, "https://dldir1.qq.com/weixin/Windows/WeChatSetup.exe"));
+            DownloadLinkLabel.Text = " 测试版    正式版";
+            DownloadLinkLabel.Links.Add(new LinkLabel.Link(1, 3, "https://www.redsonw.com/wechatwinbeta.html"));
+            DownloadLinkLabel.Links.Add(new LinkLabel.Link(8, 12, "https://dldir1.qq.com/weixin/Windows/WeChatSetup.exe"));
         }
 
         private void DownloadLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -131,7 +131,8 @@ namespace RemoveMulti
                 "3.9.5.73" => (0x01CE1C38, 0x85, 0x33),
                 "3.9.5.81" => (0x01CE15A8, 0x85, 0x33),
                 "3.9.5.91" => (0x01CE2E28, 0x85, 0x33),
-                "3.9.6.22" => (0X01CCE808, 0x85, 0x31),
+                "3.9.6.22" => (0x01CCE808, 0x85, 0x31),
+                "3.9.6.29" => (0x01CD53F8, 0x85, 0x31),
                 _ => throw new ArgumentException($"当前版本：[{version}] 不支持解除限制，，请先安装微信 [{weChatWin.WechatVer[0]}] 或以上版本")
             };
             long offset = values.offset;        // 偏移量，十六进制表示 
