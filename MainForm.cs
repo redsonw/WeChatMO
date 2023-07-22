@@ -133,6 +133,7 @@ namespace RemoveMulti
                 "3.9.5.91" => (0x01CE2E28, 0x85, 0x33),
                 "3.9.6.22" => (0x01CCE808, 0x85, 0x31),
                 "3.9.6.29" => (0x01CD53F8, 0x85, 0x31),
+                "3.9.6.33" => (0x01CD4F38, 0x85, 0x31),
                 _ => throw new ArgumentException($"当前版本：[{version}] 不支持解除限制，请先安装微信 [{weChatWin.WechatVer[0]}] 或以上版本")
             };
             long offset = values.offset;        // 偏移量，十六进制表示 
