@@ -62,8 +62,6 @@ namespace RemoveMulti
 
         private void DownloadLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            // DownloadLinkLabel.Links[0].LinkData = DownloadLinkLabel.Text;
-            // DownloadLinkLabel.LinkVisited = true;
             if (e.Link!.LinkData is string url)
             {
                 WeChatWin.OpenURL(url);
