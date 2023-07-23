@@ -16,7 +16,7 @@
 * 运行框架：.NET 7 Desktop Runtime
 * 操作系统：Windows 7 & Windows 10 & Windows 11
 * 系统类型：64位操作系统
-* 支持版本：PC微信电脑版 ≤ 3.5.6.29
+* 支持版本：PC微信电脑版 ≤ 3.5.6.33
 
 ## 发布地址
 
@@ -30,6 +30,10 @@
 ![图片[1]-解除微信多开工具-枫落墨痕](https://www.redsonw.com/wp-content/uploads/2023/06/WeChatMultiOpen.png)
 
 ## 更新日志
+
+### 2023-07-23 v0.0.1.117
+
+- 修正版本号错误导致无法登录。
 
 ### 2023-07-22 v0.0.1.116
 
