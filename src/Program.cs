@@ -1,4 +1,6 @@
-namespace RemoveMulti
+using YueHuan;
+
+namespace YueHuan
 {
     internal static class Program
     {
@@ -16,11 +18,6 @@ namespace RemoveMulti
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            /**
-             * 
-             * 当前用户是管理员的时候，直接启动应用程序
-             * 如果不是管理员，则使用启动对象启动程序，以确保使用管理员身份运行
-            **/
             // 获得当前登录的Windows用户标示
             System.Security.Principal.WindowsIdentity identity = System.Security.Principal.WindowsIdentity.GetCurrent();
             System.Security.Principal.WindowsPrincipal principal = new(identity);

@@ -1,4 +1,4 @@
-﻿namespace RemoveMulti
+﻿namespace YueHuan
 {
     partial class MainForm
     {
