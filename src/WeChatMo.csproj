@@ -35,6 +35,12 @@
 		<PackageReadmeFile>readme.md</PackageReadmeFile>
 		<RootNamespace>YueHuan</RootNamespace>
 	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+	  <LangVersion>preview</LangVersion>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+	  <LangVersion>preview</LangVersion>
+	</PropertyGroup>
 
 	<ItemGroup>
 		<Content Include="Resources\Logo.ico" />
