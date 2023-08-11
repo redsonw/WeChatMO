@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Diagnostics;
 
 namespace YueHuan
 {
@@ -34,7 +29,7 @@ namespace YueHuan
 
             if (!backupSuccess)
             {
-               // loggerListBox("备份文件失败，无法继续。");
+                // loggerListBox("备份文件失败，无法继续。");
             }
 
             bool closeSuccess = CloseWeChat();
@@ -166,6 +161,7 @@ namespace YueHuan
                 "3.9.6.22" => (0x01CCE808, 0x85, 0x31),
                 "3.9.6.29" => (0x01CD53F8, 0x85, 0x31),
                 "3.9.6.33" => (0x01CD4F38, 0x85, 0x31),
+                "3.9.6.43" => (0x01D3AA58, 0x85, 0x31),
                 _ => default,
             };
         }
