@@ -16,7 +16,7 @@
 * 运行框架：.NET 7 Desktop Runtime
 * 操作系统：Windows 7 & Windows 10 & Windows 11
 * 系统类型：64位操作系统
-* 支持版本：PC微信电脑版 ≤ 3.5.6.33
+* 支持版本：PC微信电脑版 ≤ 3.5.6.43
 
 ## 发布地址
 
