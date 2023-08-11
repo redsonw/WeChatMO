@@ -1,16 +1,8 @@
-﻿using System.Runtime.CompilerServices;
-using System.Windows.Forms;
-
-namespace YueHuan
+﻿namespace YueHuan
 {
-    public class LogMessage
+    public class LogMessage(ListBox loggerListBox)
     {
-        private readonly ListBox loggerListBox;
-
-        public LogMessage(ListBox loggerListBox)
-        {
-            this.loggerListBox = loggerListBox;
-        }
+        private readonly ListBox loggerListBox = loggerListBox;
 
         public void Add(string message)
         {
