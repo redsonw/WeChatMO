@@ -11,16 +11,12 @@
 		<AssemblyName></AssemblyName>
 		<GeneratePackageOnBuild>False</GeneratePackageOnBuild>
 		<CustomBeforeTargets>Build</CustomBeforeTargets>
-		<MajorVersion>0</MajorVersion>
-		<MinorVersion>0</MinorVersion>
-		<PatchVersion>2</PatchVersion>
-		<BuildVersion>1</BuildVersion>
-		<!-- 项目版本	号 -->
-		<Version>0.0.2.1</Version>
+		<!-- 项目版本号 -->
+		<Version>0.0.2.2</Version>
 		<!-- 程序集版本号 -->
-		<AssemblyVersion>0.0.2.1</AssemblyVersion>
+		<AssemblyVersion>0.0.2.2</AssemblyVersion>
 		<!-- 文件版本号 -->
-		<FileVersion>0.0.2.1</FileVersion>
+		<FileVersion>0.0.2.2</FileVersion>
 		<!-- 程序作者 -->
 		<Authors>弦月</Authors>
 		<!-- 公司组织 -->
