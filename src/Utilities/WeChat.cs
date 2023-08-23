@@ -10,7 +10,7 @@ namespace YueHuan
         public string WeChatVersion = string.Empty;
         public string WeChatTitle = string.Empty;
         public string UninstallString = string.Empty;
-        public readonly string[] WechatVer = new string[] { "3.9.5.65", "3.9.5.73", "3.9.5.81", "3.9.5.91", "3.9.6.22", "3.9.6.29", "3.9.6.33", "3.9.6.43" };
+        public readonly string[] WechatVer = new string[] { "3.9.5.65", "3.9.5.73", "3.9.5.81", "3.9.5.91", "3.9.6.22", "3.9.6.29", "3.9.6.33", "3.9.6.43","3.9.6.47" };
 
         // WeChatPath字段的属性
         public string WeChatPathValue
