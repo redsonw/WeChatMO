@@ -68,7 +68,7 @@ namespace YueHuan
 
         private void PatchesButton_Click(object sender, EventArgs e)
         {
-            LimitRemover remover = new (weChatWin, LoggerListBox);
+            LimitRemover remover = new(weChatWin, LoggerListBox);
             remover.RemoveLimit();
         }
     }
