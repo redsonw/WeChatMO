@@ -54,7 +54,7 @@ namespace YueHuan
             {
                 logger.Add("开始载入文件");
                 using FileStream fs = new(filePath, FileMode.Open, FileAccess.ReadWrite);
-                fs.Seek(values.offset, SeekOrigin.Begin);
+                fs.Seek(values.offset, SeekOrigin.Begin);  // 设定文件开始位置
                 logger.Add($"载入成功:{filePath}");
 
                 byte currentValue = (byte)fs.ReadByte(); // 读取指定位置的字节数据
@@ -163,6 +163,7 @@ namespace YueHuan
                 "3.9.6.33" => (0x01CD4F38, 0x85, 0x31),
                 "3.9.6.43" => (0x01D3AA58, 0x85, 0x31),
                 "3.9.6.47" => (0x01D3B2F8, 0x85, 0x31),
+                "3.9.7.15" => (0x01D49D28, 0x85, 0x31),
                 _ => default,
             };
         }
