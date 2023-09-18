@@ -12,11 +12,11 @@
 		<GeneratePackageOnBuild>False</GeneratePackageOnBuild>
 		<CustomBeforeTargets>Build</CustomBeforeTargets>
 		<!-- 项目版本号 -->
-		<Version>0.0.2.3</Version>
+		<Version>0.0.2.4</Version>
 		<!-- 程序集版本号 -->
-		<AssemblyVersion>0.0.2.3</AssemblyVersion>
+		<AssemblyVersion>0.0.2.4</AssemblyVersion>
 		<!-- 文件版本号 -->
-		<FileVersion>0.0.2.3</FileVersion>
+		<FileVersion>0.0.2.4</FileVersion>
 		<!-- 程序作者 -->
 		<Authors>弦月</Authors>
 		<!-- 公司组织 -->
