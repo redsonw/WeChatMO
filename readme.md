@@ -10,13 +10,14 @@
 * 操作简单：Mo会自动检测当前微信版本是否支持解除限制，如果不支持请在微信官方下载最新版本，或者在工具界面上的链接来下载。
 * 一次解除：运行一次软件过后将永久有效，不需要重复运行。PS：如果微信更新后需要重新运行；
 * 自由安装：文件可以放在任何一个地方运行都可以使用。
+* 自动更新：在 v0.1.0.0 版本后，可在线更新特征码，无需要重复多次下载。
 
 ## 开发环境
 
 * 运行框架：.NET 7 Desktop Runtime
 * 操作系统：Windows 7 & Windows 10 & Windows 11
 * 系统类型：64位操作系统
-* 支持版本：PC微信电脑版 ≤ 3.5.7.15
+* 支持版本：PC微信电脑版 ≤ 3.5.7.25
 
 ## 发布地址
 
@@ -25,15 +26,27 @@
 
 ## 使用说明
 
-&emsp;&emsp;由于是使用的.NET 7 框架开发，所以在运行此工具时，需要下载安装支持库Windows-Desktop-Runtime 7，下载地址：[Runtime-Desktop-7.0.5](https://www.redsonw.com/?golink=aHR0cHM6Ly9kb3dubG9hZC52aXN1YWxzdHVkaW8ubWljcm9zb2Z0LmNvbS9kb3dubG9hZC9wci9kZmZiMTkzOS1jZWYxLTRkYjMtYTU3OS01NDc1YTMwNjFjZGQvNTc4YjIwODczM2M5MTRjN2I3MzU3ZjZiYWE0ZWNmZDYvd2luZG93c2Rlc2t0b3AtcnVudGltZS03LjAuNS13aW4teDY0LmV4ZQ==)，下载后直接双击：WeChatMultiOpen，找到界面的按钮：解除限制，点击即可完成。
+&emsp;&emsp;由于是使用的.NET 7 框架开发，所以在运行此工具时，需要下载安装支持库Windows-Desktop-Runtime 7，下载地址：[ Runtime Desktop 7 ](https://www.redsonw.com/?golink=aHR0cHM6Ly9kb3dubG9hZC52aXN1YWxzdHVkaW8ubWljcm9zb2Z0LmNvbS9kb3dubG9hZC9wci9kZmZiMTkzOS1jZWYxLTRkYjMtYTU3OS01NDc1YTMwNjFjZGQvNTc4YjIwODczM2M5MTRjN2I3MzU3ZjZiYWE0ZWNmZDYvd2luZG93c2Rlc2t0b3AtcnVudGltZS03LjAuNS13aW4teDY0LmV4ZQ==)，下载后直接双击：WeChatMultiOpen，找到界面的按钮：解除限制，点击即可完成。
 
 ![图片[1]-解除微信多开工具-枫落墨痕](https://www.redsonw.com/wp-content/uploads/2023/06/WeChatMultiOpen.png)
 
 ### 目前缺陷
 
-    现在所的痛点就是每次微信更新，工具都需要重新下载后才可以使用，那么可以不可以不需要重复下载呢？答案是肯定的！有两种方法可以解决，一种是自动更新程序本身，当遇到微信更新时，也更新程序本身；二次添加远程代码，微信更新时自动远程更新代码。但是不管哪一种，实际上都需要作者本人在远程服务器中更新后才能实现。当然还有第三种情况，就是自动搜索微信中的特征代码实现自动化解除，这种我一直在尝试，但是始终未能成功，所以目前的计划是以前面两种方法取一种来解决！
+    已经解决了频繁更新主程序的问题，目前使用的是远程更新特征字进行自动更新。但是依赖网络。
+
+### 未来计划
+    
+    免扫码登录：其实一直在计划着更新免扫码登录程序，之前有做过一个版本，但是由于电脑硬盘崩坏，丢失了我的所有数据，也包括了姐姐们，咳~ 所以现在免扫码是有计划做，但是由于工作原因进度会很缓慢，请见谅。
+
 
 ## 更新日志
+
+### 2023-09-20 v0.1.0.0
+
+- 程序版本跨度升级 v0.1.0.0 (意味着有功能更新)；
+- 支持微信最新版本 3.9.7.25；
+- 新增自动更新主程序；
+- 新增在线更新特征值（在不更新主程序的情况下也能实现解除多开限制）；
 
 ### 2023-09-08 v0.0.2.4
 
