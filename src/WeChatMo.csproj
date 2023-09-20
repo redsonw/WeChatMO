@@ -12,11 +12,11 @@
 		<GeneratePackageOnBuild>False</GeneratePackageOnBuild>
 		<CustomBeforeTargets>Build</CustomBeforeTargets>
 		<!-- 项目版本号 -->
-		<Version>0.0.2.4</Version>
+		<Version>0.1.0.0</Version>
 		<!-- 程序集版本号 -->
-		<AssemblyVersion>0.0.2.4</AssemblyVersion>
+		<AssemblyVersion>0.1.0.0</AssemblyVersion>
 		<!-- 文件版本号 -->
-		<FileVersion>0.0.2.4</FileVersion>
+		<FileVersion>0.1.0.0</FileVersion>
 		<!-- 程序作者 -->
 		<Authors>弦月</Authors>
 		<!-- 公司组织 -->
@@ -56,5 +56,8 @@
 	    <Pack>True</Pack>
 	    <PackagePath>\</PackagePath>
 	  </None>
+	</ItemGroup>
+	<ItemGroup>
+	  <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
 	</ItemGroup>
 </Project>
