@@ -2,22 +2,22 @@
 
 namespace YueHuan
 {
-    public class LimitRemover
+    public class LimitRemover(WeChatWin weChatWin, ListBox lstBox)
     {
-        private readonly WeChatWin weChatWin;
-        private readonly LogMessage logger;
+        private readonly WeChatWin weChatWin = weChatWin;
+        private readonly LogMessage logger = new(lstBox);
         private readonly string fileName = "WeChatWin.dll";
 
-        public LimitRemover(WeChatWin weChatWin, ListBox lstBox)
-        {
-            this.weChatWin = weChatWin;
-            logger = new(lstBox);
-        }
-
-        public void RemoveLimit()
+        public async void RemoveLimit()
         {
             string filePath = Path.Combine(weChatWin.WeChatPath, $"[{weChatWin.WeChatVersion}]", fileName);
             string? version = FileVersionInfo.GetVersionInfo(filePath).FileVersion;
+
+            if (version == null)
+            {
+                logger.Add($"获取版本失败，请查看是微信是否安装！！");
+                return;
+            }
 
             if (!weChatWin.CheckVersion())
             {
@@ -40,7 +40,7 @@ namespace YueHuan
                 return;
             }
 
-            (long offset, byte oldValue, byte newValue) values = GetVersionValues(version);
+            (long offset, byte oldValue, byte newValue) values = await GetVersionValues(version);
 
             if (values == default)
             {
@@ -150,24 +150,22 @@ namespace YueHuan
             return true;
         }
 
-        private static (long offset, byte oldValue, byte newValue) GetVersionValues(string? version)
+        private static async Task<(long offset, byte oldValue, byte newValue)> GetVersionValues(string version)
         {
-            return version switch
+            string url = "https://www.redsonw.com/WeChat/Update.json";
+            WeChatUpdate chatUpdate = await WeChatUpdate.ParseAsync(url);
+            if (chatUpdate != null)
             {
-                "3.9.5.65" => (0x01CDFBD8, 0x85, 0x33),
-                "3.9.5.73" => (0x01CE1C38, 0x85, 0x33),
-                "3.9.5.81" => (0x01CE15A8, 0x85, 0x33),
-                "3.9.5.91" => (0x01CE2E28, 0x85, 0x33),
-                "3.9.6.22" => (0x01CCE808, 0x85, 0x31),
-                "3.9.6.29" => (0x01CD53F8, 0x85, 0x31),
-                "3.9.6.33" => (0x01CD4F38, 0x85, 0x31),
-                "3.9.6.43" => (0x01D3AA58, 0x85, 0x31),
-                "3.9.6.47" => (0x01D3B2F8, 0x85, 0x31),
-                "3.9.7.15" => (0x01D49D28, 0x85, 0x31),
-                "3.9.7.25" => (0x01D49D28, 0x85, 0x31),
-                _ => default,
-            };
+                WeChatUpdate.WeChatInfo.VersionInfo versions = chatUpdate.WeChat.Version[version];
+                long offset = versions.Offset;
+                byte oldValue = versions.OldValue;
+                byte newValue = versions.NewValue;
+                return (offset, oldValue, newValue);
+            }
+            else
+            {
+                return (0, 0, 0);
+            }
         }
-
     }
 }
