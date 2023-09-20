@@ -10,29 +10,7 @@ namespace YueHuan
         public string WeChatVersion = string.Empty;
         public string WeChatTitle = string.Empty;
         public string UninstallString = string.Empty;
-        public readonly string[] WechatVer = new string[] { "3.9.5.65", "3.9.5.73", "3.9.5.81", "3.9.5.91", "3.9.6.22", "3.9.6.29", "3.9.6.33", "3.9.6.43","3.9.6.47","3.9.7.14","3.9.7.15", "3.9.7.25" };
-
-        // WeChatPath字段的属性
-        public string WeChatPathValue
-        {
-            get { return WeChatPath; }
-        }
-
-        // WeChatVersion字段的属性
-        public string WeChatVersionValue
-        {
-            get { return WeChatVersion; }
-        }
-
-        public string WechatTitleValue
-        {
-            get { return WeChatTitle; }
-        }
-
-        public string UninstallStringValue
-        {
-            get { return UninstallString; }
-        }
+        public string[] WechatVer = Array.Empty<string>();
 
         public WeChatWin()
         {
@@ -48,11 +26,21 @@ namespace YueHuan
             }
         }
 
+        public async Task InitializeAsync()
+        {
+            string url = "https://www.redsonw.com/WeChat/Update.json";
+            WeChatUpdate chatUpdate = await WeChatUpdate.ParseAsync(url);
+            WechatVer = chatUpdate.WeChat.Version.Keys.ToArray();
+        }
+
         public bool CheckVersion()
         {
-            string fileName = Path.Combine(WeChatPath, $"[{WeChatVersion}]", "WeChatWin.dll");
-            FileVersionInfo fileVersionInfo = FileVersionInfo.GetVersionInfo(fileName);
-            string? version = fileVersionInfo.FileVersion;
+            string fileName = Path.Combine(WeChatPath, $"[{WeChatVersion}]", "WeChatWin.dll"); // 获取微信动态库
+
+            FileVersionInfo fileVersionInfo = FileVersionInfo.GetVersionInfo(fileName); // 获取动态库的版本号
+
+            string? version = fileVersionInfo.FileVersion; // 设置动态库版本号
+
             if (version != null)
             {
                 foreach (string v in WechatVer)
@@ -63,6 +51,7 @@ namespace YueHuan
                     }
                 }
             }
+
             return false;
         }
 
@@ -71,7 +60,7 @@ namespace YueHuan
         {
             try
             {
-                string filePath = Path.Combine(WeChatPath, $"[{WeChatVersionValue}]", "WeChatWin.dll");
+                string filePath = Path.Combine(WeChatPath, $"[{WeChatVersion}]", "WeChatWin.dll");
                 string backupPath = Path.ChangeExtension(filePath, "bak");
 
                 File.Copy(filePath, backupPath, true);
