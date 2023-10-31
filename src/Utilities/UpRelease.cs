@@ -77,7 +77,7 @@ namespace YueHuan
             catch (HttpRequestException ex)
             {
                 // Handle the HTTP request exception here
-                throw ex; // Re-throw or handle as appropriate
+                 throw ex; // Re-throw or handle as appropriate
             }
         }
 
