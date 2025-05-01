@@ -1,3 +1,6 @@
+## 项目停更
+
+此项目将不再维护，全新版本请转移到：[https://github.com/redsonw/MultiWeixin](https://github.com/redsonw/MultiWeixin).
 
 ## 简介
 
